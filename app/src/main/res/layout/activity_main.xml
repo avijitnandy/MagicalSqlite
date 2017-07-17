@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3xplorers.magicalsqlite.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:text="SURNAME"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="43dp"
+        android:text="MARKS"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_alignStart="@+id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_surname"
+        android:layout_alignRight="@+id/editText_surname"
+        android:layout_alignTop="@+id/textView3"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:text="Add Data" />
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_alignLeft="@+id/editText_marks"
+        android:layout_alignStart="@+id/editText_marks"
+        android:text="View All" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_marks"
+        android:layout_alignRight="@+id/editText_marks"
+        android:layout_alignTop="@+id/btnAll"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_marginBottom="10dp"
+        android:text="Id" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_marks"
+        android:layout_alignStart="@+id/editText_marks"
+        android:layout_below="@+id/editText_marks"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAll"
+        android:layout_alignStart="@+id/btnAll"
+        android:layout_below="@+id/btnAll"
+        android:layout_marginTop="32dp"
+        android:text="Delete" />
+</RelativeLayout>
